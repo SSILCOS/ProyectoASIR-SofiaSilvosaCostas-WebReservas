@@ -1,0 +1,193 @@
+/* Estilos generales para la página */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #b9b9bd; /* Fondo gris */
+    margin: 0;
+    padding: 20px;
+    color: #4f6d7a; /* Azul grisáceo suave para el texto */
+    box-sizing: border-box;
+    text-align: center; /* Centrar el contenido */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 600px; /* Ancho máximo reducido para centrar el contenido */
+    margin: 60px auto 20px; /* Añadir margen superior de 60px */
+    padding: 20px;
+    background: white; /* Fondo blanco sólido para contrastar suavemente con el fondo */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra más ligera para suavizar el diseño */
+    text-align: center;
+}
+
+/* Estilos para los títulos */
+h2 {
+    color: #345f79; /* Azul marino muy suave */
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Estilos para formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos del formulario */
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #345f79;
+}
+
+input, select, textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #a2d9ce; /* Azul verdoso muy claro para los bordes */
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border 0.3s ease-in-out;
+    font-size: 1rem;
+    width: 80%; /* Reducir el ancho para centrar */
+    max-width: 400px; /* Máximo ancho */
+}
+
+input[type="date"]:enabled, input[type="time"]:enabled {
+    border-color: #85c1e9; /* Azul celeste suave */
+}
+
+input[type="date"]:enabled:hover, input[type="time"]:enabled:hover {
+    border-color: #5499c7; /* Azul claro al pasar el mouse */
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #3498db; /* Azul claro para el foco */
+}
+
+button {
+    background-color: #5dade2; /* Azul claro para el botón */
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+    width: 150px; /* Tamaño consistente para todos los botones */
+}
+
+button:hover {
+    background-color: #3498db; /* Azul más oscuro al pasar el mouse */
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: default;
+}
+
+/* Estilos de tabla */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid #ddd; /* Borde claro */
+    background-color: white; /* Fondo blanco */
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    overflow: hidden; /* Asegura que los bordes redondeados funcionen */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #3a3f44; /* Color menos oscuro para los encabezados */
+    color: white;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px; /* Añadir margen superior para separación */
+    overflow-x: auto;
+}
+
+.users-table th, .users-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.users-table th {
+    background-color: #3f464d; /* Color menos oscuro para los encabezados */
+    color: white;
+}
+
+.home-button-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.home-button-container img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.bulk-users-table {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.bulk-users-table input, .bulk-users-table select {
+    width: 100%;
+    padding: 5px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column; /* Botones uno encima del otro */
+    align-items: center;
+}
+
+.btn-container button {
+    width: 150px; /* Tamaño consistente para todos los botones */
+    margin-bottom: 10px;
+}
+
+/* Estilos específicos para ciertos apartados */
+.specific-background {
+    background: white; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 60px auto;
+    max-width: 600px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .container, .specific-background {
+        padding: 20px;
+    }
+}
