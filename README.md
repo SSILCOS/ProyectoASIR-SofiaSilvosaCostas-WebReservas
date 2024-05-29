@@ -23,12 +23,12 @@ También existe un apartado para el personal del centro deportivo para que pueda
 
 1. Clona el repositorio en tu máquina local:
     ```bash
-    git clone https://github.com/tuusuario/tu-repositorio.git
+    git clone https://github.com/SSILCOS/ProyectoASIR-SofiaSilvosaCostas-WebReservas.git
     ```
 
 2. Navega al directorio del proyecto:
     ```bash
-    cd tu-repositorio
+    cd ProyectoASIR-SofiaSilvosaCostas-WebReservas
     ```
 
 3. Copia los archivos al directorio `htdocs` de XAMPP:
